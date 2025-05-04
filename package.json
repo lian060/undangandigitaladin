@@ -1,0 +1,17 @@
+{
+    "name": "undangan-digital",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "npx esbuild js/*.js --bundle --outdir=dist --servedir=.",
+        "build": "npx esbuild js/*.js --bundle --outdir=dist",
+        "deploy": "npm run build && npx gh-pages -d dist"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "gh-pages": "^6.3.0"
+    },
+    "homepage": "https://lian060.github.io/undagan-digital"
+}
